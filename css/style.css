@@ -1,0 +1,124 @@
+body{
+    line-height: 1.5;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%; }
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+header{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.8em;
+}
+
+#navbar{
+    background-color: white;
+    width:100%;
+    /* margin: 0;
+    padding: 0; */
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    min-width: 295px;
+}
+
+#navbar li{
+    list-style-type: none;
+    border-top: 1px solid;
+    width:100%;
+}
+
+#navbar a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+}
+
+/* #navbar ul{
+    height: 207px;
+    border: 1px solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin:0;
+    width: 100%;
+} */
+
+#main-doc{
+    position: relative;
+    top: 275px;
+    padding: 20px;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0;
+}
+
+section article{
+    margin: 15px;
+}
+
+section li{
+    margin: 15px 0px 0px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-doc{
+        width: 100%;
+    }
+    #navbar{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        max-height: 275px;
+    }
+    #navbar ul{
+        height: 207px;
+        border: 1px solid;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0;
+        margin:0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #navbar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        max-width: 350px;
+        height: 100%;
+        border-right: solid;
+    }
+    #navbar ul{
+        height: 80%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0;
+        margin:0;
+        width: 100%;
+    }
+    #main-doc{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-left: 310px;
+    }
+}
